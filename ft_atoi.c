@@ -21,8 +21,8 @@ static int	ft_check_overflow(long r, int d, int s)
 	}
 	else
 	{
-		if (r > (unsigned long)(-(long)INT_MIN) / 10
-			|| (r == (unsigned long)(-(long)INT_MIN) / 10 && d > 8))
+		if (r > -(long)INT_MIN / 10
+			|| (r == -(long)INT_MIN / 10 && d > 8))
 			return (INT_MIN);
 	}
 	return (0);
